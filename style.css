@@ -1,0 +1,281 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background-color: #1e1e1e;  /* Darker background for a more masculine tone */
+    scroll-behavior: smooth;
+}
+
+/* Artistic Header with Masculine Depth */
+header {
+    background: linear-gradient(45deg, #003366, #4d4d4d); /* Deep blue with grey gradient */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+header .overlay {
+    color: #fff;
+    text-align: center;
+    z-index: 2;
+}
+
+header h1 {
+    font-size: 4rem;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease;
+}
+
+header p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-style: italic;
+    animation: fadeIn 2.5s ease;
+}
+
+.cta-button {
+    background-color: #f57c00; /* Rusty orange button for a bold contrast */
+    color: #fff;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e64a19; /* Darker rusty orange */
+    transform: scale(1.05);
+}
+
+/* Floating Texture for Masculine Effect */
+.floating-texture {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    bottom: -100px;
+    left: -100px;
+    animation: rotate 20s infinite linear;
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Artistic Services Section */
+#services {
+    padding: 80px 20px;
+    background: #212121; /* Dark grey background for the services section */
+    text-align: center;
+}
+
+#services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+}
+
+.service-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.service-item {
+    padding: 20px;
+    background: #333; /* Slightly lighter grey for service items */
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.4s ease, background 0.4s ease;
+    border: 2px dashed #f57c00; /* Rusty orange border */
+    position: relative;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+    background: #424242;
+}
+
+.service-item h3 {
+    color: #f57c00; /* Rusty orange color for headings */
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+}
+
+/* Artistic Blog Section */
+#blog {
+    padding: 80px 20px;
+    background: #333; /* Dark grey for the blog section */
+    text-align: center;
+}
+
+#blog h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-family: 'Playfair Display', serif;
+}
+
+.blog-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.blog-item {
+    background: #424242;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.blog-item:hover {
+    transform: scale(1.05);
+    background: #616161; /* Slightly lighter grey on hover */
+}
+
+.blog-item h3 {
+    font-size: 1.8rem;
+    color: #f57c00; /* Rusty orange for blog titles */
+    margin-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+}
+
+.blog-item p {
+    font-size: 1.1rem;
+    color: #e0e0e0; /* Lighter grey for readability */
+    margin-bottom: 15px;
+}
+
+.blog-item .cta-button {
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: #f57c00;
+    color: #fff;
+}
+/* Portfolio Section with Depth */
+#portfolio {
+    padding: 80px 20px;
+    background: url('https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1400&q=80') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+    color: #fff;
+    text-align: center;
+}
+
+#portfolio h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.portfolio-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.2);
+}
+/* About Section with Layering */
+#about {
+    padding: 80px 20px;
+    background: #212121; /* Dark background for the about section */
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img-natnael {
+    width: 200px;
+    height: 200px;
+    background-image: url(img/natnael.jpg.jpg);
+    background-size: contain;
+    border-radius: 50%;
+    margin-top: 20px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact Section */
+#contact {
+    padding: 80px 20px;
+    background: #333; /* Dark grey for the contact section */
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-family: 'Playfair Display', serif;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 1rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+button.cta-button {
+    width: 100%;
+    padding: 15px;
+    background-color: #f57c00; /* Rusty orange button */
+}
+
+/* Artistic Footer */
+footer {
+    background: #1e1e1e; /* Dark background */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
